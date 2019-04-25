@@ -11,9 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springbootMicroservice.springbootMicroservice.UserRepository;
-import com.springbootMicroservice.springbootMicroservice.Users;
-
 @RestController
 @RequestMapping("/user")
 @CrossOrigin
