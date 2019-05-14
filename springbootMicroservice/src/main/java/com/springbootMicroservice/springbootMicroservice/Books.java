@@ -1,17 +1,17 @@
 package com.springbootMicroservice.springbootMicroservice;
 
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("books")
+@Document("booksinfo")
 public class Books {
 	
 		@Id
 		private String id;	
 		private String bookName;
 		private String bookPrice;
-		private String bookDescription;
+		private String bookDescription;	
+		private String bookImage;
 
 		public String getId() {
 			return id;
@@ -37,14 +37,22 @@ public class Books {
 		public void setBookDescription(String bookDescription) {
 			this.bookDescription = bookDescription;
 		}
+		public String getBookImage() {
+			return bookImage;
+		}
+		public void setBookImage(String bookImage) {
+			this.bookImage = bookImage;
+		}
 		
-		public Books(String id, String bookName, String bookPrice, String bookDescription) {
+		public Books(String id, String bookName, String bookPrice, String bookDescription, String bookImage) {
 			this.id=id;
 			this.bookName = bookName;
 			this.bookPrice = bookPrice;
-			this.bookDescription=bookDescription;
+			this.bookDescription = bookDescription;
+			this.bookImage= bookImage;
 			
 		}
 		
 		
 }
+
